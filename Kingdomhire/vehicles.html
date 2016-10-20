@@ -9,6 +9,10 @@
 		<meta name=viewport content='width=1050'>
 	</head>
 <body>
+	<div id="modal1" class="modal">
+		<span class="close" onclick="document.getElementbyId('modal1').style.display='none'">&times;</span>
+			<img class="modal-content" id="img1">
+	</div>
 	<div class="header_wrapper  scene_element scene_element--fadeindown">
 		<nav class="main_navbar">
 		<div class="left-side">
@@ -21,17 +25,17 @@
 		</div>		
 		<ul class="navbar_links">
 			<li class="button">
-			<a class="nav_link" href="home.html"> <!--href="http://www.kingdomhire.com/home"> --> 
+			<a class="nav_link" href="http://www.kingdomhire.com/home">
 			Home
 			</a>
 			</li>		
 			<li class="button">
-			<a class="nav_link" href="vehicles.html"> <!--href="http://www.kingdomhire.com/vehicles"> -->
+			<a class="nav_link" href="http://www.kingdomhire.com/vehicles">
 			Vehicles
 			</a>
 			</li>	
 			<li class="button">
-			<a class="nav_link" href="contact.html"> <!--href="http://www.kingdomhire.com/contact"> -->
+			<a class="nav_link" href="http://www.kingdomhire.com/contact"> 
 			Contact/Map
 			</a>
 			</li>
@@ -68,9 +72,8 @@
 				</div>
 				<div class="section1_Container">
 					<div class="column left scene_element scene_element--fadeinleft">
-						<img class="column1" src="images/smallVan.jpg" width="100%" height="60%"/>
+						<img class="column1" id="myimg" src="images/smallVan.jpg" width="100%" height="60%"/>
 						<div class="vehicleInfoColumn">
-						
 							<table class="carInfo" cellspacing="0" cellpadding="0">
 								<tr class="bottom">
 								<th>Vehicle</th>
@@ -96,7 +99,7 @@
 						</div>
 					</div>
 					<div class="column middle scene_element scene_element--fadeindown">
-						<img class="column1" src="images/blackCar.jpg" width="100%" height="60%"/>
+						<img class="column1" id="myimg1" src="images/blackCar.jpg" width="100%" height="60%"/>
 						<div class="vehicleInfoColumn">
 						<table class="carInfo" cellspacing="0" cellpadding="0">
 								<tr class="bottom">
@@ -123,7 +126,7 @@
 						</div>
 					</div>
 					<div class="column right scene_element scene_element--fadeinright">
-						<img class="column1" src="images/blueCar.jpg" width="100%" height="60%"/>
+						<img class="column1" id="myimg2" src="images/blueCar.jpg" width="100%" height="60%"/>
 						<div class="vehicleInfoColumn">
 							<table class="carInfo" cellspacing="0" cellpadding="0">
 								<tr class="bottom">
@@ -152,7 +155,7 @@
 				</div>
 				<div class="section1_Container">
 					<div class="column left scene_element scene_element--fadeinleft">
-						<img class="column1" src="images/bigVan.jpg" width="100%" height="60%"/>
+						<img class="column1" id="myimg3" src="images/bigVan.jpg" width="100%" height="60%"/>
 						<div class="vehicleInfoColumn">
 						<table class="carInfo" cellspacing="0" cellpadding="0">
 								<tr class="bottom">
@@ -179,7 +182,7 @@
 						</div>
 					</div>
 					<div class="column middle scene_element scene_element--fadeinup">
-					<img class="column1" src="images/redCar.jpg" width="100%" height="60%"/>
+					<img class="column1" id="myimg4" src="images/redCar.jpg" width="100%" height="60%"/>
 					<div class="vehicleInfoColumn">
 						<table class="carInfo" cellspacing="0" cellpadding="0">
 								<tr class="bottom">
@@ -206,7 +209,7 @@
 						</div>
 					</div>
 					<div class="column right scene_element scene_element--fadeinright">
-					<img class="column1" src="images/blackConvertable.jpg" width="100%" height="60%"/>
+					<img class="column1" id="myimg5" src="images/blackConvertable.jpg" width="100%" height="60%" />
 					<div class="vehicleInfoColumn">
 						<table class="carInfo" cellspacing="0" cellpadding="0">
 								<tr class="bottom">
@@ -243,5 +246,6 @@
 		</div>
 	</div>
 	</div>
+	<script src="vehicleScript.js"></script>
 </body>
 </html>
