@@ -78,6 +78,13 @@
     to {transform:scale(1)}
 }
 
+.contactForm {
+	float: left;
+	width: 525px;
+	border-color: rgba(0,0,0,.05);
+	margin: 5px 20px 20px 20px;
+}
+
 /* The Close Button */
 .close {
     position: absolute;
@@ -128,9 +135,9 @@
     animation-duration: 0.5s;
 }
 
-#img1 {
-	border: 5px solid rgba(40,143,91,0.4);
-	box-shadow: 5px rgb(0,0,0);
+#modal_image {
+	/*border: 3px solid rgb(25,87,56);*/ 
+	box-shadow: 0px 0px 5px rgb(0,0,0);
 }
 
 body {
@@ -330,6 +337,7 @@ body {
 .column2_container_contact {
 	float: right;
 	width: 425px;
+	height: 535px;
 	display: block;
 }
 p {
@@ -439,7 +447,7 @@ th {
 	letter-spacing: 0.02em;
 	height: 100%;
 	width: 37%;
-	text-transform: uppercase;
+	text-transform: uppercase; 
 	font-weight: bold;
 	text-align: right;
 	float: left;
@@ -452,6 +460,12 @@ th {
 	text-shadow: 0px 1px 1px rgba(0,0,0,.3);
 	/*background-color: #3CB371;*/
 	/*background-color: rgba(0,0,0,.1);*/
+}
+
+.form {
+	color: rgb(75,206,138);
+	line-height: 1.9em;
+	letter-spacing: 0.02em;
 }
 tr {
 	background-color: rgba(0,0,0,.07);
