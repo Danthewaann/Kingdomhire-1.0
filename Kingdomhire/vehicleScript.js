@@ -33,7 +33,6 @@ var Renault_Master = new ModalImage('Renault_Master');
 var Peugeot_307 = new ModalImage('Peugeot_307');
 var Megane = new ModalImage('Megane');
 
-});
 
 
 
