@@ -1,45 +1,42 @@
-var modal = document.getElementById('Modal1');
 
-var img = document.getElementById('myimg');
-var img1 = document.getElementById('myimg1');
-var img2 = document.getElementById('myimg2');
-var img3 = document.getElementById('myimg3');
-var img4 = document.getElementById('myimg4');
-var img5 = document.getElementById('myimg5');
-var modalImg = document.getElementById("img1");
+$(document).ready(function() {
+	
+// Get the id for the modal container and modal image
+var modal = document.getElementById('Modal_container');
+var modalImg = document.getElementById('modal_image');
 
-img.onclick = function(){
-    modal1.style.display = "block";
-    modalImg.src = this.src;
-}
+// Constructor for creating modal images
+function ModalImage(id) {
+	
+	var img = document.getElementById(id);
+	var exit = document.getElementsByClassName('close')[0];
+	
+	img.onclick = function() {
 
-img1.onclick = function(){
-    modal1.style.display = "block";
-    modalImg.src = this.src;
-}
+		modal_container.style.display = 'block';
+		modalImg.src = img.src;
 
-img2.onclick = function(){
-    modal1.style.display = "block";
-    modalImg.src = this.src;
-}
+	}
+	
+	exit.onclick = function() {
+		
+		modal_container.style.display = 'none';
+		
+	}
+} // Constructor ends
 
-img3.onclick = function(){
-    modal1.style.display = "block";
-    modalImg.src = this.src;
-}
+// Initialise each vehicle image object
+var Renault_Trafic = new ModalImage('Renault_Trafic');
+var Kia_Sedona = new ModalImage('Kia_Sedona');
+var Peugeot_308 = new ModalImage('Peugeot_308');
+var Renault_Master = new ModalImage('Renault_Master');
+var Peugeot_307 = new ModalImage('Peugeot_307');
+var Megane = new ModalImage('Megane');
 
-img4.onclick = function(){
-    modal1.style.display = "block";
-    modalImg.src = this.src;
-}
+});
 
-img5.onclick = function(){
-    modal1.style.display = "block";
-    modalImg.src = this.src;
-}
 
-var span = document.getElementsByClassName("close")[0];
 
-span.onclick = function() { 
-  modal1.style.display = "none";
-}
+
+
+
