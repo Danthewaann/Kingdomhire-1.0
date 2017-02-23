@@ -1,6 +1,3 @@
-
-$(document).ready(function() {
-	
 // Get the id for the modal container and modal image
 var modal = document.getElementById('Modal_container');
 var modalImg = document.getElementById('modal_image');
